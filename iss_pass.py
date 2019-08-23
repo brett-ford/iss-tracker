@@ -3,6 +3,7 @@ from datetime import datetime as dt
 
 """
 Finds the next 5 times the International Space Station will fly over a location. 
+Visible 10 degrees above the horizon. 
 """
 
 mb = {"name": "Moses Brown School", "arguments": {"lat": 41.8334, "lon": -71.3985, "alt": 43, "n": 5}}
