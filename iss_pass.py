@@ -11,7 +11,7 @@ mb_parameters = mb["arguments"]
 iss_response = requests.get("http://api.open-notify.org/iss-pass.json", params=mb_parameters)
 iss = iss_response.json()
 
-print("***** ISS Flyover Times *****")
+print("****** ISS Flyover Times ******")
 print("Current Time:")
 print(dt.today().strftime("%Y-%m-%d %H:%M:%S"))
 
@@ -27,4 +27,4 @@ for response in iss["response"]:
     flyover = str(dt.fromtimestamp(response["risetime"])) + " for " + str(response["duration"]) + " seconds."
     print(flyover)
 
-print("***** Finished *****")
+print("****** Finished ******")
